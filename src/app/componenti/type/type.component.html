@@ -1,0 +1,13 @@
+<!-- <div class="container">
+    <div class="row">
+    </div>
+</div> -->
+<nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+        <div *ngFor="let typeList of typeArray" class="inline-block">
+            <app-button [typeList]="typeList"></app-button>
+        </div>
+    </form>
+</nav>
+<hr style="background-color: #343a40;" />
+<app-list-by-type [pokemonList]="pokemonArray"></app-list-by-type>

@@ -1,0 +1,13 @@
+<div class="col-10">
+    <div class="card" style="width: 18rem;" style="align-items: center;">
+        <img class="card-img-top" style="width: 96px; height: 96px;" src="{{pokemon.sprites}}" alt="Card image cap">
+        <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">{{pokemon.nome}}</h5>
+            <button type="button" class="btn btn-dark" data-toggle="modal"
+                [attr.data-target]="'#exampleModal'+pokemon.id">Details</button>
+        </div>
+    </div>
+    <div>
+        <app-modal [pokemonModal]="pokemon"></app-modal>
+    </div>
+</div>
